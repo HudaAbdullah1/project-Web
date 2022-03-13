@@ -31,31 +31,39 @@
 
 /* عشان يظهر الكلام */
 #hero .caption{
-
     position: relative;
-    z-index: 20;
+    z-index:20;
+    max-width: 1000px;
     text-align: center;
     color: #ffff;
 }
 
 /* h1تنسيقات الخط ل */
-#hero caption h1{
-
-    text-transform: uppercase;
-    font-size: 30em;
-    margin-bottom: o.5rem;
+#hero .caption h1{
+    font-size:4.5em;
+    margin: 0;
+    padding: 0;
+    color: #ffff;
 }
-/* عشان اذا صغرنا الشاشة يتصغر معنا الكلام */
-#hero caption h2{
-    font-weight: 400;
+/* h2تنسيقات الخط ل */
+#hero caption h3{
     font-size: 1.5rem;
     margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
+/* h3تنسيقات الخط ل */
+#hero caption h4{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #ffff;
 }
 /* تنسيقات النص */
 .caption a{
     display: inline-block;
     font-size: 1em;
-    background: #ffff;
     padding: 10px 30px;
     text-decoration: none;
     color: black;
@@ -63,12 +71,8 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-/* عشان اذا ضغطنا على الزر يتكبر النص */
-.caption a:hover{
-    letter-spacing: 7px;
-}
 
-/* عشان النص يتكبر ويصغر على حسب الشاشة */
+/* عشان النص يتكبر ويصغر على حسب الشاشة 
 @media screen and (min-width:1200px)
 {
     #hero .caption h1{
@@ -79,7 +83,4 @@
         font-size: 2.5rem;
     }
 
-}
-
-
-
+}*/

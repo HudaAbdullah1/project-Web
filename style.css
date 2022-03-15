@@ -1,11 +1,26 @@
-#hero{
+/* تنسيق الموقع كامل */
+*{
+    margin: opx;
+    padding: 0;
+}
+/* لون خلفية الموقع كامل */
+body{
+    background-color:#f0e5dd;
+}
+
+.btn{
+    margin: 10px 0;
+    text-align: center;
+}
+
+#hero{ 
     height: 100vh;
     width: 100%;
-    background: gray;
     display: flex;
     align-items: center; 
-    justify-content: center; 
-}
+    justify-content: center; }
+
+
 /* فلتر على الفديو كامل */
 #hero::after{
     width: 100%;
@@ -18,7 +33,7 @@
     background: rgba(0,0,0,0.5);
 }
 
-/* اعدادات الفديو */
+/* عشان يظهر الكلام فوق الفديو */
 #hero video{ 
     width: 100%;
     height: 100%;
@@ -60,27 +75,73 @@
     padding: 0;
     color: #ffff;
 }
-/* تنسيقات النص */
+/* تنسيقات الزر 
 .caption a{
-    display: inline-block;
-    font-size: 1em;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-    text-transform: uppercase;
+    margin: 0px 10px;
+    border: 2px solid;
+    padding:13px 35px;
+    border-radius: 30px;
+    color:#000;
     letter-spacing: 1px;
+    background-color: #fff;
+    text-decoration: none;
+}*/
+/* الزر */
+.caption a{
+    border: 2px solid #ffff;
+    color: #000;
+    background-color: #fff;
+    transition: 0.5%;
+    transition: 0.5s;
 }
 
-/* عشان النص يتكبر ويصغر على حسب الشاشة 
-@media screen and (min-width:1200px)
-{
-    #hero .caption h1{
-        font-size: 3rem;
-    }
+/* الصفحة الثانية */
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+/* الصورة */
+.pic{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    object-fit: cover;
+}
+/* المربع */
+.card{
+    height: 600px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+    background:#E5CCB9;
+    box-shadow: 5px 10px 20px #000;
+}
 
-    #hero .caption h2{
-        font-size: 2.5rem;
-    }
+.info{
+    padding: 20px 0;
+    background: #E5CCB9;
+    height: 207px;
+    border-radius: 0px 0px 10px 10px;
+}
+/* تنسيقات العنوان اللي بالصورة */
+.text-1{
+    text-align: center;
+    font-size: 21px;
+    color: #000;
+}
+/* تنسيقات النبذة البسيطة */
+.text-2{
+    margin: 10px 20px;
+    padding: 10px o;
+}
+/* تنسيقات الزر اللي عند الصورة */
+.btn1{
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    transition: 4s all;
+    background: none;
+    outline: none;
+}
 
-}*/
